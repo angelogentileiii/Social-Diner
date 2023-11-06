@@ -1,9 +1,12 @@
 import './';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import Header from './components/Header';
 import Home from './pages/Home';
-import LoginPage from './pages/LoginPage';
+import Profile from './pages/Profile';
 import ErrorPage from './pages/ErrorPage';
+import AddReview from './pages/AddReview';
+import Favorites from './pages/Favorites';
 
 function App() {
 
@@ -15,14 +18,19 @@ function App() {
         children: [
             {
                 path: "/",
-                element: 
-                <>
-                  <h1>HomePage</h1>
-                </>
+                element: <p>Home Page</p>
             },
             {
-                path: "/login",
-                element: <LoginPage />
+                path: "/profiles/:username",
+                element: <Profile />
+            },
+            {
+              path: "/addreview",
+              element: <AddReview />
+            },
+            {
+              path: "/favorites",
+              element: <Favorites />
             }
         ]
     }
@@ -33,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Page Header</h1>
+        <Header />
       </header>
       <body>
         <RouterProvider router={router} />
