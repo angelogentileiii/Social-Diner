@@ -1,14 +1,25 @@
 import './';
+import { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Header from './components/Header';
 import Home from './pages/Home';
+import UserList from './pages/UserList';
 import Profile from './pages/Profile';
 import ErrorPage from './pages/ErrorPage';
 import AddReview from './pages/AddReview';
 import Favorites from './pages/Favorites';
 
 function App() {
+  const [userData, setUserData] = useState([])
+
+  useEffect(()=> {
+    fetch(`http://localhost:3000/profiles`)
+      .then(response => response.json())
+      .then(returnedData => {
+        setUserData(returnedData)
+      })
+  }, [])
 
   const routes = [
     {
@@ -18,15 +29,19 @@ function App() {
         children: [
             {
                 path: "/",
-                element: <p>Home Page</p>
+                element: <p>Placeholder text for Home Body (maybe table)</p>
             },
             {
-                path: "/profiles/:username",
-                element: <Profile />
+              path: "/profiles",
+              element: <UserList userData={userData}/>
             },
             {
-              path: "/addreview",
-              element: <AddReview />
+              path: "profiles/:profileID",
+              element: <Profile />
+            },
+            {
+              path: "/:profileID/addreview",
+              element: <AddReview userData={userData}/>
             },
             {
               path: "/favorites",
