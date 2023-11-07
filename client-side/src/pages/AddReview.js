@@ -1,12 +1,12 @@
 import {useState} from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 let restaurantName;
 
 function AddReview ({ userData }) {
     const {profileID} = useParams();
+    const navigate = useNavigate();
 
-    // let restaurantName;
     const [reviewData, setReviewData] = useState({
         restaurant_name: "",
         ratings: []
@@ -40,16 +40,15 @@ function AddReview ({ userData }) {
                 })
         } else if (
             name === "dish_size" ||
-            name === "score"
-        ) {
-            const newNumberRating = {
-                ...reviewData.ratings,
-                [name] : Number(value)
-            }
-            setReviewData({
-                ...reviewData,
-                ratings: newNumberRating
-            })
+            name === "score") {
+                const newNumberRating = {
+                    ...reviewData.ratings,
+                    [name] : Number(value)
+                }
+                setReviewData({
+                    ...reviewData,
+                    ratings: newNumberRating
+                })
         } else {
             setReviewData({
                 ...reviewData,
@@ -62,47 +61,45 @@ function AddReview ({ userData }) {
         event.preventDefault();
     
         userData.forEach((user) => {
-        if (user.id === profileID) {
-            let foundRestaurant = false;
-    
-            user.reviews = user.reviews.map((restaurant) => {
-            if (restaurant.restaurant_name.toLowerCase() === restaurantName.toLowerCase()) {
-                foundRestaurant = true;
-                return {
-                ...restaurant,
-                ratings: [...restaurant.ratings, reviewData.ratings],
-                };
-            }
-            return restaurant;
-            });
-    
-            if (!foundRestaurant) {
-            user.reviews.push({
-                restaurant_name: restaurantName,
-                ratings: [reviewData.ratings],
-            });
-            }
-    
-            fetch(`http://localhost:3000/profiles/${user.id}`, {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-            },
-            body: JSON.stringify(user),
-            })
-            .then((response) => {
-                if (response.ok) {
-                return response.json().then((returnedData) => {
-                    // console.log(returnedData);
-                });
+            if (user.id === profileID) {
+                let foundRestaurant = false;
+        
+                user.reviews = user.reviews.map((restaurant) => {
+                if (restaurant.restaurant_name.toLowerCase() === restaurantName.toLowerCase()) {
+                    foundRestaurant = true;
+                    return {
+                        ...restaurant,
+                        ratings: [...restaurant.ratings, reviewData.ratings],
+                    };
                 }
-            });
-        }
+                return restaurant;
+                });
+        
+                if (!foundRestaurant) {
+                    user.reviews.push({
+                        restaurant_name: restaurantName,
+                        ratings: [reviewData.ratings],
+                    });
+                }
+        
+                fetch(`http://localhost:3000/profiles/${user.id}`, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                },
+                body: JSON.stringify(user),
+                })
+                .then((response) => {
+                    if (response.ok) {
+                        return response.json().then(() => {
+                            navigate(`/profiles/${user.id}`)
+                        });
+                    }
+                });
+            }
         });
-        event.target.reset();
     }
-
 
     return(
         <div>

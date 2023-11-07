@@ -11,6 +11,8 @@ import AddReview from './pages/AddReview';
 import Favorites from './pages/Favorites';
 import Login from './pages/Login';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   const [userData, setUserData] = useState([])
 
@@ -52,7 +54,11 @@ function App() {
   const routes = [
     {
         path: "/",
-        element: <Home />,
+        element: <Home 
+        loggedIn={loggedIn} 
+        setLoggedIn={setLoggedIn} 
+        email={email}
+        />,
         errorElement: <ErrorPage />,
         children: [
             {

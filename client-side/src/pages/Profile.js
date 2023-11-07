@@ -1,12 +1,17 @@
 import {useState, useEffect} from 'react';
-import { useParams } from 'react-router-dom';
-import ErrorPage from './ErrorPage';
+import { useNavigate, useParams } from 'react-router-dom';
+
+import Card from 'react-bootstrap/Card';
 
 function Profile (){
     const [profile, setProfile] = useState({})
 
+    const navigate = useNavigate();
     const { profileID } = useParams();
-    //console.log(profileID)
+    
+    function handleNewReviewClick(id){
+        navigate(`/${id}/addreview`)
+    }
 
     useEffect(() => {
         fetch(`http://localhost:3000/profiles/${profileID}`)
@@ -17,22 +22,25 @@ function Profile (){
     }, [profileID])
 
     if(!profile.firstname) {
-        return <ErrorPage />
+        return <h1>Sorry looking...</h1>
     }
 
-    const {id, firstname, lastname, dishes_rated, reviews} = profile;
+    const {id, firstname, lastname, reviews} = profile;
         const eachRestaurantRating = reviews.map((review, index) => {
             const {restaurant_name, ratings} = review
                 const dishRatings = ratings.map((rating, index)=> {
                     const {dish_name, cuisine, dish_size, score} = rating;
                     return (
-                        <div key={index}>
-                            <h5>Dish: {dish_name}</h5>
-                            <li>Cuisine: {cuisine}</li>
-                            <li>Size: {dish_size}</li>
-                            <li>My Score: {score}</li>
-                            <br></br>
-                        </div>
+
+                        <Card style={{ width: '18rem' }}>
+                            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+                            <Card.Body>
+                                <Card.Title>{dish_name}</Card.Title>
+                                <Card.Text>Cuisine: {cuisine}</Card.Text>
+                                <Card.Text>Dish Size: {dish_size}</Card.Text>
+                                <Card.Text>Rating: {score}</Card.Text>
+                            </Card.Body>
+                        </Card>
                     )
                 })
             return (
@@ -42,10 +50,11 @@ function Profile (){
                 </ul>
             )
         })
+    
     return (
         <span className="dinerCard" key={id}>
             <h3>{firstname} {lastname}</h3>
-            <h4>Dishes Rated: {Number(dishes_rated)}</h4>
+            <button onClick={()=>handleNewReviewClick(id)}>Add A New Review</button>
             <ul>{eachRestaurantRating}</ul>
         </span>
     )
