@@ -6,6 +6,7 @@
       "firstname": "Angelo",
       "lastname": "Gentile",
       "dishes_rated": 3,
+      "location": "Irvington, NY",
       "reviews": [
         {
           "restaurant_name": "Lord's",
@@ -21,6 +22,18 @@
               "cuisine": "English",
               "dish_size": 3,
               "score": 9
+            },
+            {
+              "dish_name": "Baked Potato",
+              "cuisine": "English",
+              "dish_size": 3,
+              "score": 5
+            },
+            {
+              "dish_name": "Pizza Pie",
+              "cuisine": "Potato",
+              "dish_size": 2,
+              "score": 4
             }
           ]
         },
@@ -34,6 +47,28 @@
               "score": 9
             }
           ]
+        },
+        {
+          "restaurant_name": "Burger King",
+          "ratings": [
+            {
+              "dish_name": "Cheeseburger",
+              "cuisine": "America",
+              "dish_size": 1,
+              "score": 1
+            }
+          ]
+        },
+        {
+          "restaurant_name": "McDonald's",
+          "ratings": [
+            {
+              "dish_name": "Burger",
+              "cuisine": "America",
+              "dish_size": 2,
+              "score": 5
+            }
+          ]
         }
       ]
     },
@@ -43,6 +78,7 @@
       "firstname": "Andrew",
       "lastname": "Faryniarz",
       "dishes_rated": 2,
+      "location": "Cos Cob, CT",
       "reviews": [
         {
           "restaurant_name": "Burger King",
@@ -58,6 +94,12 @@
               "cuisine": "American",
               "dish_size": 1,
               "score": 3
+            },
+            {
+              "dish_name": "FISH",
+              "cuisine": "asfafsf",
+              "dish_size": 2,
+              "score": 5
             }
           ]
         },
@@ -86,6 +128,7 @@
       "firstname": "Kristian",
       "lastname": "Guzman",
       "dishes_rated": 2,
+      "location": "New York, NY",
       "reviews": [
         {
           "restaurant_name": "Lord's",
