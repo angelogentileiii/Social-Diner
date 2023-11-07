@@ -31,8 +31,7 @@ function Profile (){
                 const dishRatings = ratings.map((rating, index)=> {
                     const {dish_name, cuisine, dish_size, score} = rating;
                     return (
-
-                        <Card style={{ width: '18rem' }}>
+                        <Card key={index} style={{ width: '18rem' }}>
                             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
                             <Card.Body>
                                 <Card.Title>{dish_name}</Card.Title>

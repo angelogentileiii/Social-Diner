@@ -33,9 +33,9 @@ function SideBar ({ loggedIn, setLoggedIn, email }){
         <div>
             <div className="sidebar">
                 <ul className="nav">
-                        <Link to="/">Home</Link>
+                        <Link to="/" className="w3-bar-item w3-button">Home</Link>
                         <br></br>
-                        <Link to="/login">Login</Link>
+                        <Link to="/login" className="w3-bar-item w3-button">Login</Link>
                 </ul>
             </div>
         </div>

@@ -166,5 +166,53 @@
         }
       ]
     }
+  ],
+  "articles": [
+    {
+      "instagram": [
+        {
+          "name": "Daniel Krieger",
+          "account": "@danielKrieger",
+          "link": "https://www.instagram.com/danielkrieger/",
+          "followers": "145k",
+          "description": "Covering food for major New York publications, photographer Daniel Krieger is clued-in on the newest, trending restaurants in New York."
+        },
+        {
+          "name": "Camille Becerra",
+          "account": "@camillebecerra",
+          "link": "https://www.instagram.com/camillebecerra/",
+          "followers": "85.6k",
+          "description": "The former Navy executive chef and food stylist first gained prominence on season 3 of Bravo's Top Chef. Her aesthetic feed highlights healthy at-home eats, trips to the greenmarket and a love of dining out"
+        },
+        {
+          "name": "Patrick Janelle",
+          "account": "@aguynamedPatrick",
+          "link": "https://www.instagram.com/aguynamedpatrick/?hl=en",
+          "followers": "424k",
+          "description": "The self-proclaimed `man about town` snaps stunning, iPhone-only photos of the city's streets, fashion and food. And when it comes to drinking the prettiest cappuccinos, he's definitely one to watch."
+          },
+          {
+          "name": "Mike Chau",
+          "account": "@foodbabyny",
+          "link": "https://www.instagram.com/foodbabyny/",
+          "followers": "303k",
+          "description": "You can always trust these two young eaters to be snacking on the most coveted dishes (and sitting at the toughest tables) in New York. This is definitely the cutest account on the list, but what happens when they grow up?"
+          },
+          {
+          "name": "Jackie Gebel",
+          "account": "@noleftobers",
+          "link": "https://www.instagram.com/noleftovers",
+          "followers": "355k",
+          "description": "As social-media manager for a hospitality PR firm by day, Gebel's career often overlaps with her passion for food Instagramming. The best part about this feed? Every caption comes with a witty, sometimes dad-joke–worthy pun."
+          },
+          {
+          "name": "Skyler Bouchard",
+          "account": "@diningwithskyler",
+          "link": "https://www.instagram.com/diningwithskyler",
+          "followers": "273k",
+          "description": "A full-time food blogger and advocate of the infamous split-sandwich shot (see below), Bouchard's diet seems to be at least 50% bagel. And we're totally fine with that."
+          }
+      ]
+    }
   ]
 }
