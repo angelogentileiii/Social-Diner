@@ -12,6 +12,8 @@ function SideBar (){
                         <Link to="/addreview">Review a Dish</Link>
                         <br></br>
                         <Link to="/favorites">My Favorites</Link>
+                        <br></br>
+                        <Link to="/login">Login</Link>
                 </ul>
             </div>
         </div>
