@@ -15,9 +15,7 @@ function UserList({ userData }){
         const eachRestaurantRating = reviews.map((review, index) => {
             const {restaurant_name} = review
             return (
-                <ul key={index}>
-                    <p>{restaurant_name}</p>
-                </ul>
+                    <li key={index}>{restaurant_name}</li>
             )
         })
         return (

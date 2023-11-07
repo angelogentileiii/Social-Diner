@@ -10,6 +10,7 @@ import ErrorPage from './pages/ErrorPage';
 import AddReview from './pages/AddReview';
 import Favorites from './pages/Favorites';
 import Login from './pages/Login';
+import Landing from './components/Landing';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -63,7 +64,11 @@ function App() {
         children: [
             {
                 path: "/",
-                element: <p>Placeholder text for Home Body (maybe table)</p>
+                element: (
+                  <div>
+                    <Landing />
+                  </div>
+                )
             },
             {
               path: "/login",
@@ -92,13 +97,13 @@ function App() {
   const router = createBrowserRouter(routes);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app-header">
         <Header />
       </header>
-      <body>
+      <main>
         <RouterProvider router={router} />
-      </body>
+      </main>
     </div>
   );
 }
