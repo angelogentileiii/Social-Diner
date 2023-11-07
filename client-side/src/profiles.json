@@ -1,0 +1,127 @@
+{
+  "profiles": [
+    {
+      "id": "1",
+      "username": "AGentile",
+      "firstname": "Angelo",
+      "lastname": "Gentile",
+      "dishes_rated": 3,
+      "reviews": [
+        {
+          "restaurant_name": "Lord's",
+          "ratings": [
+            {
+              "dish_name": "Scotch Egg",
+              "cuisine": "English",
+              "dish_size": 1,
+              "score": 8
+            },
+            {
+              "dish_name": "Skirt Steak",
+              "cuisine": "English",
+              "dish_size": 3,
+              "score": 9
+            }
+          ]
+        },
+        {
+          "restaurant_name": "Eleven Madison Park",
+          "ratings": [
+            {
+              "dish_name": "Celtuce Five Ways",
+              "cuisine": "Contemporary",
+              "dish_size": 2,
+              "score": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "username": "AFaryniarz",
+      "firstname": "Andrew",
+      "lastname": "Faryniarz",
+      "dishes_rated": 2,
+      "reviews": [
+        {
+          "restaurant_name": "Burger King",
+          "ratings": [
+            {
+              "dish_name": "Smokehouse Burger",
+              "cuisine": "American",
+              "dish_size": 1,
+              "score": 4
+            },
+            {
+              "dish_name": "Fried Chicken Sandwich",
+              "cuisine": "American",
+              "dish_size": 1,
+              "score": 3
+            }
+          ]
+        },
+        {
+          "restaurant_name": "Luigi's",
+          "ratings": [
+            {
+              "dish_name": "Pasta",
+              "cuisine": "Italian",
+              "dish_size": 3,
+              "score": 5
+            },
+            {
+              "dish_name": "Pizza",
+              "cuisine": "Italian",
+              "dish_size": 2,
+              "score": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "username": "KGuzman",
+      "firstname": "Kristian",
+      "lastname": "Guzman",
+      "dishes_rated": 2,
+      "reviews": [
+        {
+          "restaurant_name": "Lord's",
+          "ratings": [
+            {
+              "dish_name": "Scotch Egg",
+              "cuisine": "English",
+              "dish_size": 1,
+              "score": 8
+            },
+            {
+              "dish_name": "Hangar Steak",
+              "cuisine": "English",
+              "dish_size": 3,
+              "score": 7
+            }
+          ]
+        },
+        {
+          "restaurant_name": "Burger King",
+          "ratings": [
+            {
+              "dish_name": "Double Cheeseburger",
+              "cuisine": "American",
+              "dish_size": 2,
+              "score": 5
+            },
+            {
+              "dish_name": "Triple Bacon Cheeseburger",
+              "cuisine": "American",
+              "dish_size": 1,
+              "score": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
