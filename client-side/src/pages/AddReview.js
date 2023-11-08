@@ -101,64 +101,95 @@ function AddReview ({ userData }) {
         });
     }
 
+    const formStyling = {
+        display: 'flex',
+        justifyContent: 'flex-start'
+    }
+
+    const inputStyling = {
+        display: 'flex',
+        width: '200%',
+        marginLeft: '5vh',
+        padding: '2vh',
+        borderRadius: '10px',
+        border: '1px solid #8d4843',
+        boxSizing: 'border-box',
+        fontSize: '16px',
+        color: 'black',
+        outline: 'none',
+        backgroundColor: '#ede4da',
+    }
+
+    const buttonStyling = {
+        width: '200%',
+        backgroundColor: '#8d4843',
+        color: '#ede4da',
+        marginLeft: '5vh',
+        marginTop: '5vh',
+        padding: '2vh',
+        border: 'none',
+        borderRadius: '10px',
+        cursor: 'pointer',
+        fontSize: '16px',
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        letterSpacing: '1px',
+    }
+
     return(
-        <div>
-            <h2>Write a Review</h2>
+        // <div style={divStyling}>
             <form onSubmit={handleReviewSubmit}>
-                <label>Restaurant: 
                     <input
+                    style={inputStyling}
+                    placeholder='Restaurant'
                     type='text'
                     name='restaurant_name'
                     value={reviewData.restaurant_name}
                     onChange={handleReviewInputChange}
                     />
-                </label>
             <br></br>
-                <label>
-                    Name of Dish: 
                     <input
+                    style={inputStyling}
                     type="text"
+                    placeholder='Name of Dish'
                     name="dish_name"
                     value={reviewData.dish_name}
                     onChange={handleReviewInputChange}
                     />
-                </label>
             <br></br>
-                <label>
-                    Cuisine Type:
                     <input
+                    style={inputStyling}
+                    placeholder='Cuisine Type'
                     type="text"
                     name="cuisine"
                     value={reviewData.cuisine}
                     onChange={handleReviewInputChange}
                     />
-                </label>
             <br></br>
-                <label>
-                    Size of Dish: 
                     <input
-                    placeholder='Scale of 0-3'
+                    style={inputStyling}
+                    placeholder='Dish Size (Scale of 0-3)'
                     type="number"
                     name="dish_size"
                     value={reviewData.dishSizeRating}
                     onChange={handleReviewInputChange}
                     />
-                </label>
             <br></br>
-                <label>
-                    Rank the Dish:
                     <input
-                    placeholder='Scale of 1 - 9'
+                    style={inputStyling}
+                    placeholder='Dish Score (Scale of 1 - 9)'
                     type="number"
                     name="score"
                     value={reviewData.dishRanking}
                     onChange={handleReviewInputChange}
                     />
-                </label>
             <br></br>
-                <button type="submit">Add Review</button>
+                <button 
+                type="submit"
+                style={buttonStyling}
+                >Add Review</button>
             </form>
-        </div>
+        // </div>
     )
 }
 

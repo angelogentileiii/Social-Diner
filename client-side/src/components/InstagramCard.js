@@ -1,26 +1,42 @@
 import Card from 'react-bootstrap/Card';
 import { useOutletContext } from 'react-router-dom';
+import { useState } from 'react'
 
 function InstagramCard () {
-    const data = useOutletContext();
-    // console.log(data)
+    const {data, handleHeaderClick} = useOutletContext();
+
+    const [isHovered, setIsHovered] = useState(-1);
 
     const itemArray = data.map((item, index)=> {
-        const eachItem = item.instagram.map((instagram, index)=> {
-            const {name, account, link, followers, description} = instagram;
+        const eachItem = item.instagram.map((instagram, innerIndex)=> {
+            const {name, link, followers, description, account} = instagram;
                 return (
                     <Card key={index} style={{ width: '18rem' }}>
                         <Card.Body>
-                            <Card.Title>{name} </Card.Title>
+                            <Card.Header>
+                                <strong>
+                                    {name}
+                                </strong>
+                            </Card.Header>
+                            <br></br>
+                            <Card.Text
+                            onClick={() => handleHeaderClick(link)}
+                            style={{
+                                color: isHovered === innerIndex ? 'maroon' : 'initial'
+                            }}
+                            onMouseEnter={() => setIsHovered(innerIndex)}
+                            onMouseLeave={() => setIsHovered(-1)}
+                            >
+                            {account}
+                            </Card.Text>
                             <Card.Text>{followers}</Card.Text>
                             <Card.Text>{description}</Card.Text>
-                            <Card.Link href={link}>{account}</Card.Link>
                         </Card.Body>
                     </Card>
                 )
             })
         return (
-            <div key={index}>
+            <div key={index} className="cardContainer">
                 {eachItem}
             </div>
         )

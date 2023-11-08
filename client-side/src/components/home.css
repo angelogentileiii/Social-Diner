@@ -1,0 +1,17 @@
+.mainContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav {
+    font-size: 14px;
+    height: 100em;
+    width: 25vh;
+    background-color: #8d4843;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 7px;
+    color: #ede4da;
+}

@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
-import InstagramCard from './InstagramCard';
 import NewsNav from './NewsNav';
 import { Outlet } from 'react-router-dom';
+import './socialcards.css';
 
 function Landing(){
     const [data, setData] = useState([])
-   
+
+    function handleHeaderClick(link){
+       window.open(link)
+    }
 
     useEffect(()=> {
         fetch(`http://localhost:3000/articles`)
@@ -18,7 +21,7 @@ function Landing(){
     return (
         <>
             <NewsNav />
-            <Outlet context={data}/>
+            <Outlet context={{data:data, handleHeaderClick:handleHeaderClick}}/>
         </>
     )
 }

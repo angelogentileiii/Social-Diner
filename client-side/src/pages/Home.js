@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
 import SideBar from "../components/SideBar";
 
+import '../components/home.css';
+
 function Home({ loggedIn, setLoggedIn, email }) {
     
     return (
         <>
-            <div>
+            <div className="mainContainer">
                 <SideBar
                 loggedIn={loggedIn}
                 setLoggedIn={setLoggedIn}
