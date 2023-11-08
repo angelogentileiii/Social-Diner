@@ -1,4 +1,4 @@
-import '.';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useEffect, useState } from 'react';
@@ -17,6 +17,8 @@ import AddProfile from './pages/AddProfile';
 import Landing from './components/Landing';
 import InstagramCard from './components/InstagramCard';
 import Infatuation from './components/Infatuation';
+import Timeout from './components/Timeout';
+import Eater from './components/Eater';
 
 function App() {
   const [userData, setUserData] = useState([])
@@ -85,6 +87,14 @@ function App() {
                   {
                     path: "home/infatuation",
                     element: <Infatuation />
+                  },
+                  {
+                    path: "home/timeout",
+                    element: <Timeout />
+                  },
+                  {
+                    path: "home/eater",
+                    element: <Eater />
                   }
                 ]
             },

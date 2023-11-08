@@ -1,6 +1,7 @@
-
 import { useNavigate } from "react-router-dom";
-import Card from 'react-bootstrap/Card'
+
+import Card from 'react-bootstrap/Card';
+import '../components/socialcards.css';
 
 
 function UserList({ userData }){
@@ -19,29 +20,26 @@ function UserList({ userData }){
             )
         })
         return (
-
-            <Card key={id} style={{ width: '18rem' }}>
-                <Card.Body>
-                    <Card.Title>{firstname} {lastname} </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">{location}</Card.Subtitle>
-                    <Card.Text>
-                    <strong>Reviewed Restaurants: </strong>{eachRestaurantRating}
-                    </Card.Text>
-                    <Card.Link href="#">
-                        <button onClick={() => handleProfileClick(id)}>View Profile</button>
-                    </Card.Link>
-                </Card.Body>
-            </Card>
+                <Card key={id} style={{ width: '18rem' }}>
+                    <Card.Body>
+                        <Card.Title>{firstname} {lastname} </Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">{location}</Card.Subtitle>
+                        <Card.Text>
+                        <strong>Reviewed Restaurants: </strong>{eachRestaurantRating}
+                        </Card.Text>
+                        <Card.Link href="#">
+                            <button className="button" onClick={() => handleProfileClick(id)}>View Profile</button>
+                        </Card.Link>
+                    </Card.Body>
+                </Card>
         )
     })
 
     return (
-        <div>
+        <div className='cardFormat'>
             {eachUser}
         </div>
     )
-   
-
 }
 
 export default UserList

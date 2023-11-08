@@ -18,14 +18,15 @@ function SideBar ({ loggedIn, setLoggedIn, email }){
             <div>
             <div className="sidebar">
                 <ul className="nav">
-                        <Link to="/" className="w3-bar-item w3-button">Home </Link>
-                        <Link to="/profiles" className="w3-bar-item w3-button">Profiles</Link>
-                        <Link to="/addprofile" className="w3-bar-item w3-button">Create New Profile</Link>
-                        <Link to="/" className="w3-bar-item w3-button" onClick={onButtonClick}>Logout</Link>
+                    <br></br>
+                        <Link to="/" className="sidebar-link">Home </Link>
+                        <Link to="/profiles" className="sidebar-link">Current Users</Link>
+                        <Link to="/addprofile" className="sidebar-link">Create New Profile</Link>
+                        <Link to="/" className="sidebar-link" onClick={onButtonClick}>Logout</Link>
+                    <br></br>
+                    <br></br>
+                        <div className="email">{email}</div>
                 </ul>
-                <p>
-                {email}
-                </p>
             </div>
         </div>
         )
@@ -34,9 +35,8 @@ function SideBar ({ loggedIn, setLoggedIn, email }){
         <div>
             <div className="sidebar">
                 <ul className="nav">
-                        <Link to="/" className="w3-bar-item w3-button">Home</Link>
-                        <br></br>
-                        <Link to="/login" className="w3-bar-item w3-button">Login</Link>
+                        <Link to="/" className="sidebar-link">Home</Link>
+                        <Link to="/login" className="sidebar-link">Login</Link>
                 </ul>
             </div>
         </div>

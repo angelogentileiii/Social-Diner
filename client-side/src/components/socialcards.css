@@ -1,0 +1,75 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dinerCard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 2px;
+    gap: 20px;
+}
+
+.socialNavigation {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cardAuthor {
+    text-align: center;
+}
+
+.cardFormat {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    color: #ede4da;
+    background-color: #8d4843;
+    border-radius: 12px;
+}
+
+.sidebar-link {
+    color: #ede4da;
+    padding: .5em;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.sidebar-link:hover {
+    color: #8d4843;
+    background-color: #dbcebb;
+}
+
+.email {
+    color: #ede4da;
+    padding: .5em;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.news-link {
+    color: #8d4843;
+    padding: .5em;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.news-link:hover {
+    color: #dbcebb;
+    background-color: #8d4843;
+}

@@ -38,35 +38,78 @@ function AddProfile({ userData, setUserData }){
 
     }
 
+    const inputStyling = {
+        width: '80%',
+        marginLeft: '5vh',
+        marginTop: '5vh',
+        padding: '2vh',
+        borderRadius: '10px',
+        border: '1px solid #8d4843', // Dark tan outline color
+        boxSizing: 'border-box',
+        fontSize: '16px',
+        color: 'black',
+        outline: 'none', // Remove blue outline on hover
+        backgroundColor: '#ede4da',
+    }
+
+    const buttonStyling = {
+        width: '80%', // Set width to 100%
+        backgroundColor: '#8d4843',
+        color: '#ede4da',
+        marginLeft: '5vh',
+        marginTop: '5vh',
+        padding: '2vh',
+        border: 'none',
+        borderRadius: '10px',
+        cursor: 'pointer',
+        fontSize: '16px', // Match font size with the input
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        letterSpacing: '1px',
+    }
+
 
     return (
-        <form onSubmit={handleNewProfileSubmit}>
-            <input 
-            type="text"
-            name="username"
-            placeholder="Username"
-            onChange={handleNewProfileInput}
-            ></input>
-            <input 
-            type="text" 
-            name="firstname"
-            placeholder="First Name"
-            onChange={handleNewProfileInput}
-            ></input>
-            <input 
-            type="text" 
-            name="lastname"
-            placeholder="Last Name"
-            onChange={handleNewProfileInput}
-            ></input>
-            <input 
-            type="text" 
-            name="location"
-            placeholder="City, State"
-            onChange={handleNewProfileInput}
-            ></input>
-            <button type="submit">Create</button>
-        </form>
+        <>
+            
+            <form 
+            className='form-submit'
+            onSubmit={handleNewProfileSubmit}
+            >
+                <input 
+                style={inputStyling}
+                type="text"
+                name="username"
+                placeholder="Username"
+                onChange={handleNewProfileInput}
+                ></input>
+                <input 
+                style={inputStyling}
+                type="text" 
+                name="firstname"
+                placeholder="First Name"
+                onChange={handleNewProfileInput}
+                ></input>
+                <input 
+                style={inputStyling}
+                type="text" 
+                name="lastname"
+                placeholder="Last Name"
+                onChange={handleNewProfileInput}
+                ></input>
+                <input 
+                style={inputStyling}
+                type="text" 
+                name="location"
+                placeholder="City, State"
+                onChange={handleNewProfileInput}
+                ></input>
+                <button 
+                type="submit"
+                style={buttonStyling}
+                >Create</button>
+            </form>
+        </>
     )
 }
 

@@ -321,6 +321,94 @@
           "image": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1080,ar_4:3,g_center,f_auto/cms/Lashevet-Spread_20of_20Dishes-Lashevet",
           "image_credit": "Lashevet"
         }
+      ],
+      "timeout": [
+        {
+          "name": "The 15 Best Burger in NYC",
+          "account": "Amber Sutherland-Namako",
+          "link": "https://www.timeout.com/newyork/restaurants/best-burgers-nyc",
+          "image": "https://media.timeout.com/images/105990892/1920/1080/image.jpg",
+          "image_credit": "Daniel Krieger"
+        },
+        {
+          "name": "The 10 Best Sandwiches in NYC",
+          "account": "Chris Stang",
+          "link": "https://www.timeout.com/newyork/restaurants/the-10-best-sandwiches-in-nyc",
+          "image": "https://media.timeout.com/images/105765274/1920/1080/image.jpg",
+          "image_credit": "Virginia Rollison"
+        },
+        {
+          "name": "NYC's 12 Best First-Date Restaurants",
+          "account": "Amber Sutherland-Namako",
+          "link": "https://www.timeout.com/newyork/restaurants/the-best-first-date-restaurants-and-bars-in-nyc",
+          "image": "https://media.timeout.com/images/105875205/1920/1080/image.jpg",
+          "image_credit": "Giada Paoloni"
+        },
+        {
+          "name": "NYC's Best Steakhouses",
+          "account": "Amber Sutherland-Namako",
+          "link": "https://www.timeout.com/newyork/restaurants/the-best-steak-restaurants-in-new-york",
+          "image": "https://media.timeout.com/images/105942872/1920/1080/image.jpg",
+          "image_credit": "Teddy Wolff"
+        },
+        {
+          "name": "The Best Mexican Restaurants in NYC",
+          "account": "Bao Ong, Amber Sutherland-Namako, & Victoria Marin",
+          "link": "https://www.timeout.com/newyork/restaurants/best-mexican-restaurants",
+          "image": "https://media.timeout.com/images/105860477/1920/1080/image.jpg",
+          "image_credit": "Oxomoco"
+        },
+        {
+          "name": "New York's Best Pizza",
+          "account": "Amber Sutherland-Namako",
+          "link": "https://www.timeout.com/newyork/restaurants/best-new-york-pizza",
+          "image": "https://media.timeout.com/images/105914227/1920/1080/image.jpg",
+          "image_credit": "Rod Morata"
+        }
+      ],
+      "eater": [
+        {
+          "name": "Ray's, a Cocktail Bar Backed by a 'Succession' Star is Coming to Brooklyn",
+          "account": "Luke Fortney",
+          "link": "https://ny.eater.com/2023/11/7/23949418/rays-manhattan-cocktail-bar-opening-greenpoint-brooklyn",
+          "image": "https://cdn.vox-cdn.com/thumbor/qmUwraBp8kw_uBBQ7pa8vW21eKc=/0x0:2245x1669/1520x1013/filters:focal(1010x671:1368x1029):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72839908/IMG_3734.0.jpg",
+          "image_credit": "Luke Fortney"
+        },
+        {
+          "name": "A 20K-Square-Foot Sake Taproom Opens With a Rule of Thirds Alum - And More Openings",
+          "account": "Emma Orlow & Eater Staff",
+          "link": "https://ny.eater.com/2023/11/2/23938856/nyc-restaurant-openings-november-2023",
+          "image": "https://cdn.vox-cdn.com/thumbor/LD0QdKxSveyVA1yMWL4YgaXkt-k=/0x0:8256x5504/1520x1013/filters:focal(3468x2092:4788x3412):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72821874/DSC_9472_Enhanced_NR_Ward8studios__1_.0.jpg",
+          "image_credit": "Ramon Frias"
+        },
+        {
+          "name": "Manhattan's Famous $34 Steak Frites Restaurant Is Back",
+          "account": "Amber Sutherland-Namako",
+          "link": "https://ny.eater.com/2023/11/2/23943330/le-relais-de-venise-entrecote-reopens-manhattan-nyc",
+          "image": "https://cdn.vox-cdn.com/thumbor/TPaTfgNKk5o6WCcUywEnBBcvoWw=/0x0:5775x3850/1520x1013/filters:focal(2426x1463:3350x2387):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72821229/IMG_7196.0.jpg",
+          "image_credit": "Luke Fortney"
+        },
+        {
+          "name": "Manhattan's New Korean BBQ Restaurant is All About Pork",
+          "account": "Luke Fortney",
+          "link": "https://ny.eater.com/2023/10/6/23893357/don-don-opening-bryant-park-pork-mari-kochi",
+          "image": "https://cdn.vox-cdn.com/thumbor/09GETSVXzGOT3skPHwaXagmj-Mg=/0x0:3542x2657/2070x1164/filters:focal(1488x1046:2054x1612):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72728857/IMG_2528_2.0.jpg",
+          "image_credit": "Luke Fortney"
+        },
+        {
+          "name": "A Fine Dining Restaurant Opens in a Midtown Subway Station",
+          "account": "Emma Orlow",
+          "link": "https://ny.eater.com/2023/10/3/23901404/noksu-opening-subway-baekjeong-herald-square",
+          "image": "https://cdn.vox-cdn.com/thumbor/AeIEiJXkZ7gbfgnnbVZucT6rRhY=/0x0:5947x3889/2150x1209/filters:focal(2499x1470:3449x2420):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72716934/Noksu.0.jpg",
+          "image_credit": "Brynne Levy"
+        },
+        {
+          "name": "One of the Country's First Michelin-Starred Indian Restaurants Opens a Follow-Up",
+          "account": "Luke Fortney",
+          "link": "https://ny.eater.com/2023/10/3/23900548/jazba-indian-restaurant-opening-nyc-junoon-michelin-star",
+          "image": "https://cdn.vox-cdn.com/thumbor/4SC071bNAXdFvewjvW8W-OWsaMA=/0x0:7511x5007/2070x1164/filters:focal(3156x1904:4356x3104):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72716577/20230815_JAZBA1907.0.jpg",
+          "image_credit": "Alex Lau"
+        }
       ]
     }
   ]

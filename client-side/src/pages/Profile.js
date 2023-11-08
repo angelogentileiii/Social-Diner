@@ -32,7 +32,6 @@ function Profile (){
                     const {dish_name, cuisine, dish_size, score} = rating;
                     return (
                         <Card key={index} style={{ width: '18rem' }}>
-                            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
                             <Card.Body>
                                 <Card.Title>{dish_name}</Card.Title>
                                 <Card.Text>Cuisine: {cuisine}</Card.Text>
@@ -51,11 +50,15 @@ function Profile (){
         })
     
     return (
-        <span className="dinerCard" key={id}>
+        <div className="dinerCard" key={id}>
             <h3>{firstname} {lastname}</h3>
-            <button onClick={()=>handleNewReviewClick(id)}>Add A New Review</button>
-            <ul>{eachRestaurantRating}</ul>
-        </span>
+            <button className="button"
+            onClick={()=>handleNewReviewClick(id)}
+            >
+            Add A New Review
+            </button>
+            <ul className='dinerCard'>{eachRestaurantRating}</ul>
+        </div>
     )
 
 }
