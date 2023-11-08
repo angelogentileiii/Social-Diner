@@ -69,6 +69,17 @@
               "score": 5
             }
           ]
+        },
+        {
+          "restaurant_name": "Pizza Spot",
+          "ratings": [
+            {
+              "dish_name": "Pep Pizza",
+              "cuisine": "Italian",
+              "dish_size": 1,
+              "score": 3
+            }
+          ]
         }
       ]
     },
@@ -266,9 +277,7 @@
           "followers": "273k",
           "description": "A full-time food blogger and advocate of the infamous split-sandwich shot (see below), Bouchard's diet seems to be at least 50% bagel. And we're totally fine with that."
         }
-      ]
-    },
-    {
+      ],
       "infatuation": [
         {
           "name": "The Best Restaurants in Fidi",
@@ -276,7 +285,6 @@
           "link": "https://www.theinfatuation.com/new-york/guides/the-best-restaurants-in-the-financial-district-and-seaport",
           "image": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1080,ar_4:3,g_center,f_auto/Le_Gratin-Spread_FiDi_Guide_Header_Photo-Emily_Schindler_q2jfl4",
           "image_credit": "Emily Schindler"
-          // "description": ""
         },
         {
           "name": "The Best Restaurants in the East Village",
@@ -284,13 +292,13 @@
           "link": "https://www.theinfatuation.com/new-york/guides/the-best-restaurants-in-the-east-village",
           "image": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1080,ar_4:3,g_center,f_auto/NYC_TimesSquare_Scenery_EmilySchindler_01_y3bqq1",
           "image_credit": "Emily Schindler"
-          // "description": ""
         },
         {
           "name": "The Best Restaurants in Times Square",
-          // "account": "",
-          "link": "https://www.theinfatuation.com/new-york/guides/the-best-restaurants-in-times-square"
-          // "description": ""
+          "account": "Chris Stang",
+          "link": "https://www.theinfatuation.com/new-york/guides/the-best-restaurants-in-times-square",
+          "image": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_828,ar_4:3,g_center,f_auto/NYC_TimesSquare_Scenery_EmilySchindler_01_y3bqq1",
+          "image_credit": "Emily Schindler"
         },
         {
           "name": "The Best Restaurants in Union Square",
@@ -298,7 +306,6 @@
           "link": "https://www.theinfatuation.com/new-york/guides/union-square-restaurants",
           "image": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1080,ar_4:3,g_center,f_auto/cms/guides/union-square-restaurants/banners/1550584126.08",
           "image_credit": "Noah Devereaux"
-          // "description": ""
         },
         {
           "name": "The Best Restaurants in Hell's Kitchen",
@@ -306,7 +313,6 @@
           "link": "https://www.theinfatuation.com/new-york/guides/best-hells-kitchen-restaurants",
           "image": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1080,ar_4:3,g_center,f_auto/images/NYC_SteakFritesBistro_FoodGroup_KatePrevite_00001_e3wgww",
           "image_credit": "Kate Previte"
-          // "description": ""
         },
         {
           "name": "The Best Restaurants in the Upper East Side",
@@ -314,8 +320,7 @@
           "link": "https://www.theinfatuation.com/new-york/guides/upper-east-side-restaurants",
           "image": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1080,ar_4:3,g_center,f_auto/cms/Lashevet-Spread_20of_20Dishes-Lashevet",
           "image_credit": "Lashevet"
-          // "description": ""
-        },
+        }
       ]
     }
   ]

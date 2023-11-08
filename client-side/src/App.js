@@ -15,7 +15,8 @@ import AddProfile from './pages/AddProfile';
 
 //home page components
 import Landing from './components/Landing';
-import Instagram from './components/Instagram';
+import InstagramCard from './components/InstagramCard';
+import Infatuation from './components/Infatuation';
 
 function App() {
   const [userData, setUserData] = useState([])
@@ -74,13 +75,17 @@ function App() {
                 ),
                 children: [
                   {
+                    path: "/",
+                    element: <InstagramCard />
+                  },
+                  {
                     path: "home/instagram",
-                    element: <Instagram />
+                    element: <InstagramCard />
+                  },
+                  {
+                    path: "home/infatuation",
+                    element: <Infatuation />
                   }
-                  // {
-                  //   path: "home/infatuation",
-                  //   element: <Infatuation />
-                  // }
                 ]
             },
             {
