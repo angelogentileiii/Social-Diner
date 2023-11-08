@@ -20,6 +20,7 @@ function SideBar ({ loggedIn, setLoggedIn, email }){
                 <ul className="nav">
                         <Link to="/" className="w3-bar-item w3-button">Home </Link>
                         <Link to="/profiles" className="w3-bar-item w3-button">Profiles</Link>
+                        <Link to="/addprofile" className="w3-bar-item w3-button">Create New Profile</Link>
                         <Link to="/" className="w3-bar-item w3-button" onClick={onButtonClick}>Logout</Link>
                 </ul>
                 <p>
