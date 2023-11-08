@@ -1,4 +1,6 @@
 import '.';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -8,11 +10,12 @@ import UserList from './pages/UserList';
 import Profile from './pages/Profile';
 import ErrorPage from './pages/ErrorPage';
 import AddReview from './pages/AddReview';
-import Favorites from './pages/Favorites';
 import Login from './pages/Login';
-import Landing from './components/Landing';
+import AddProfile from './pages/AddProfile';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+//home page components
+import Landing from './components/Landing';
+import Instagram from './components/Instagram';
 
 function App() {
   const [userData, setUserData] = useState([])
@@ -68,7 +71,17 @@ function App() {
                   <div>
                     <Landing />
                   </div>
-                )
+                ),
+                children: [
+                  {
+                    path: "home/instagram",
+                    element: <Instagram />
+                  }
+                  // {
+                  //   path: "home/infatuation",
+                  //   element: <Infatuation />
+                  // }
+                ]
             },
             {
               path: "/login",
@@ -87,8 +100,11 @@ function App() {
               element: <AddReview userData={userData}/>
             },
             {
-              path: "/favorites",
-              element: <Favorites />
+              path: "/addprofile",
+              element: <AddProfile 
+              userData={userData}
+              setUserData={setUserData}
+              />
             }
         ]
     }

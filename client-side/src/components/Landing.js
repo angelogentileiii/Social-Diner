@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import InstagramCard from './InstagramCard';
+import InstagramCard from './Instagram';
+import NewsNav from './NewsNav';
 
 function Landing(){
     const [data, setData] = useState([])
@@ -26,9 +27,13 @@ function Landing(){
     })
 
     return (
-        <ul>
-            {itemArray}
-        </ul>
+        <>
+            <NewsNav />
+            <ul>
+                {itemArray}
+            </ul>
+        </>
+        
     )
 }
 
