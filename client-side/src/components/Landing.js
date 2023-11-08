@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
-import InstagramCard from './Instagram';
+import InstagramCard from './InstagramCard';
 import NewsNav from './NewsNav';
+import { Outlet } from 'react-router-dom';
 
 function Landing(){
     const [data, setData] = useState([])
+   
 
     useEffect(()=> {
         fetch(`http://localhost:3000/articles`)
@@ -13,27 +15,11 @@ function Landing(){
             })
     }, [])
 
-    const itemArray = data.map((item, index)=> {
-        const eachInstaCard = item.instagram.map((instagram, index)=> {
-            return (
-               <InstagramCard key={index} instagram={instagram} />
-            )
-        })
-        return (
-            <div key={index}>
-                {eachInstaCard}
-            </div>
-        )
-    })
-
     return (
         <>
             <NewsNav />
-            <ul>
-                {itemArray}
-            </ul>
+            <Outlet context={data}/>
         </>
-        
     )
 }
 

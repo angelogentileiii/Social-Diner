@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import SideBar from "../components/SideBar";
-import Landing from "../components/Landing";
 
 function Home({ loggedIn, setLoggedIn, email }) {
     
@@ -14,9 +13,6 @@ function Home({ loggedIn, setLoggedIn, email }) {
                 />
                 <Outlet />
             </div>
-            {/* <div>
-                <Landing />
-            </div> */}
         </>
     )
 }
