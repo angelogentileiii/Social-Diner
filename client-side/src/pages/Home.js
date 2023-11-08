@@ -1,15 +1,19 @@
-// import {useState, useEffect} from 'react';
-import { Outlet } from "react-router-dom"
-import SideBar from "../components/SideBar"
+import { Outlet } from "react-router-dom";
+import SideBar from "../components/SideBar";
 
-function Home() {
-    // const [restaurantNews, setRestaurantNews] = useState([]);
+function Home({ loggedIn, setLoggedIn, email }) {
     
     return (
-        <div>
-            <SideBar />
-            <Outlet />
-        </div>
+        <>
+            <div>
+                <SideBar
+                loggedIn={loggedIn}
+                setLoggedIn={setLoggedIn}
+                email={email}
+                />
+                <Outlet />
+            </div>
+        </>
     )
 }
 

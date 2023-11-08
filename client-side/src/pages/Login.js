@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = (props) => {
-    // const {loggedIn, setLoggedIn} = props;
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -82,7 +81,7 @@ const Login = (props) => {
                 localStorage.setItem("user", JSON.stringify({email, token: r.token}))
                 props.setLoggedIn(true)
                 props.setEmail(email)
-                navigate("/")
+                navigate("/profiles")
             } else {
                 window.alert("Wrong email or password")
             }

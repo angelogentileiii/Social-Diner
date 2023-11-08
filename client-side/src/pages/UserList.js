@@ -1,5 +1,7 @@
 
 import { useNavigate } from "react-router-dom";
+import Card from 'react-bootstrap/Card'
+
 
 function UserList({ userData }){
     const navigate = useNavigate();
@@ -9,21 +11,27 @@ function UserList({ userData }){
     }
 
     const eachUser = userData.map((user)=> {
-        const {id, firstname, lastname, reviews} = user;
+        const {id, firstname, lastname, location, reviews} = user;
         const eachRestaurantRating = reviews.map((review, index) => {
             const {restaurant_name} = review
             return (
-                <ul key={index}>
-                    <h4>{restaurant_name}</h4>
-                </ul>
+                    <li key={index}>{restaurant_name}</li>
             )
         })
         return (
-            <span className="dinerCard" key={id}>
-                <h3>{firstname} {lastname}</h3>
-                <ul>Top Restaurants: {eachRestaurantRating}</ul>
-                <button onClick={() => handleProfileClick(id)}>View Profile</button>
-            </span>
+
+            <Card key={id} style={{ width: '18rem' }}>
+                <Card.Body>
+                    <Card.Title>{firstname} {lastname} </Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">{location}</Card.Subtitle>
+                    <Card.Text>
+                    <strong>Reviewed Restaurants: </strong>{eachRestaurantRating}
+                    </Card.Text>
+                    <Card.Link href="#">
+                        <button onClick={() => handleProfileClick(id)}>View Profile</button>
+                    </Card.Link>
+                </Card.Body>
+            </Card>
         )
     })
 

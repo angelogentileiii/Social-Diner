@@ -1,4 +1,6 @@
 import '.';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -8,8 +10,13 @@ import UserList from './pages/UserList';
 import Profile from './pages/Profile';
 import ErrorPage from './pages/ErrorPage';
 import AddReview from './pages/AddReview';
-import Favorites from './pages/Favorites';
 import Login from './pages/Login';
+import AddProfile from './pages/AddProfile';
+
+//home page components
+import Landing from './components/Landing';
+import InstagramCard from './components/InstagramCard';
+import Infatuation from './components/Infatuation';
 
 function App() {
   const [userData, setUserData] = useState([])
@@ -52,12 +59,34 @@ function App() {
   const routes = [
     {
         path: "/",
-        element: <Home />,
+        element: <Home 
+        loggedIn={loggedIn} 
+        setLoggedIn={setLoggedIn} 
+        email={email}
+        />,
         errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",
-                element: <p>Placeholder text for Home Body (maybe table)</p>
+                element: (
+                  <div>
+                    <Landing />
+                  </div>
+                ),
+                children: [
+                  {
+                    path: "/",
+                    element: <InstagramCard />
+                  },
+                  {
+                    path: "home/instagram",
+                    element: <InstagramCard />
+                  },
+                  {
+                    path: "home/infatuation",
+                    element: <Infatuation />
+                  }
+                ]
             },
             {
               path: "/login",
@@ -76,8 +105,11 @@ function App() {
               element: <AddReview userData={userData}/>
             },
             {
-              path: "/favorites",
-              element: <Favorites />
+              path: "/addprofile",
+              element: <AddProfile 
+              userData={userData}
+              setUserData={setUserData}
+              />
             }
         ]
     }
@@ -86,13 +118,13 @@ function App() {
   const router = createBrowserRouter(routes);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app-header">
         <Header />
       </header>
-      <body>
+      <main>
         <RouterProvider router={router} />
-      </body>
+      </main>
     </div>
   );
 }
