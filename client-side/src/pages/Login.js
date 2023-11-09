@@ -88,13 +88,41 @@ const Login = (props) => {
         })
     }
 
+    const inputStyling = {
+        width: '90%',
+        marginLeft: '5vh',
+        marginTop: '5vh',
+        padding: '2vh',
+        borderRadius: '10px',
+        border: '1px solid #8d4843', // Dark tan outline color
+        boxSizing: 'border-box',
+        fontSize: '16px',
+        color: 'black',
+        outline: 'none', // Remove blue outline on hover
+        backgroundColor: '#ede4da',
+    }
+
+    const buttonStyling = {
+        width: '80%', // Set width to 100%
+        backgroundColor: '#8d4843',
+        color: '#ede4da',
+        marginLeft: '5vh',
+        marginTop: '5vh',
+        padding: '2vh',
+        border: 'none',
+        borderRadius: '10px',
+        cursor: 'pointer',
+        fontSize: '16px', // Match font size with the input
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        letterSpacing: '1px',
+    }
+
     return <div className={"mainContainer"}>
-        <div className={"titleContainer"}>
-            <div>Login</div>
-        </div>
         <br />
         <div className={"inputContainer"}>
             <input
+                style={inputStyling}
                 value={email}
                 placeholder="Enter your email here"
                 onChange={ev => setEmail(ev.target.value)}
@@ -104,6 +132,7 @@ const Login = (props) => {
         <br />
         <div className={"inputContainer"}>
             <input
+                style={inputStyling}
                 value={password}
                 placeholder="Enter your password here"
                 onChange={ev => setPassword(ev.target.value)}
@@ -113,6 +142,7 @@ const Login = (props) => {
         <br />
         <div className={"inputContainer"}>
             <input
+                style={buttonStyling}
                 className={"inputButton"}
                 type="button"
                 onClick={onButtonClick}

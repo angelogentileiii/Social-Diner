@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Welcome to Social Diner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A social platform for serious foodies. A bridge between commonly known social media platforms of today and food rating applications with a focus on specific dishes and creating your own dining profile!
 
-## Available Scripts
+Upon landing on the application, you will have a navigatable home page with a small collection of food-related articles and instagram profiles. In your sidebar navigation, you can choose to login with your email and password in order to have access to creating new reviews, creating new local profiles, and viewing all current profiles and reviews.
 
-In the project directory, you can run:
+This project was created as a final project for the React Phase of the Flatiron School in New York, NY.
+
+## Run the App
+
+After you fork and clone this repository to your local directory, you can open your local terminal and run the following (in separate terminal windows):
+
+### `npm run server`
+
+This will host the local JSON server with our local database of information.
+
+### `node app.js`
+
+This will host the authentication server for your login credentials. Your login must be an email address and a 9-character password. 
+If an account associated with your email does not exist, you will be prompted to create a new account for your email.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This will start the react app and redirect you to a browser with the running app. Enjoy!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Future Goals
 
-### `npm test`
+We hope to expand this application at a later date in order to include, at minimum, the following functionalities:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - A proper RSS feed with daily updates to our news platforms and social media accounts
+    - The ability to connect your individual login with your profile only and redirect to your individual home page
+    - A "friends" page connected to your profile to add/remove other users and build your dining network
+    - The ability to like, comment, and save individual dish reviews to a "Want to Eat" list
+    - Integrate compatibility with personal social media pages as well as a functionality to create posts with geo-tagging and images
 
-### `npm run build`
+    And much more!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Credentials
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project uses data and images from their respective news outlets (currently hard coded into a local JSON file).
