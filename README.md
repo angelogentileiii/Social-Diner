@@ -4,8 +4,6 @@ A social platform for serious foodies. A bridge between commonly known social me
 
 Upon landing on the application, you will have a navigatable home page with a small collection of food-related articles and instagram profiles. In your sidebar navigation, you can choose to login with your email and password in order to have access to creating new reviews, creating new local profiles, and viewing all current profiles and reviews.
 
-This project was created as a final project for the React Phase of the Flatiron School in New York, NY.
-
 ## Run the App
 
 After you fork and clone this repository to your local directory, you can open your local terminal and run the following (in separate terminal windows):
