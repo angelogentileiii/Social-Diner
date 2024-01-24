@@ -39,13 +39,13 @@ _This will start the react app and redirect you to a browser with the running ap
 
 We hope to expand this application at a later date in order to include, at minimum, the following functionalities:
 
-    - A proper RSS feed with daily updates to our news platforms and social media accounts
-    - The ability to connect your individual login with your profile only and redirect to your individual home page
-    - A "friends" page connected to your profile to add/remove other users and build your dining network
-    - The ability to like, comment, and save individual dish reviews to a "Want to Eat" list
-    - Integrate compatibility with personal social media pages as well as a functionality to create posts with geo-tagging and images
+- A proper RSS feed with daily updates to our news platforms and social media accounts
+- The ability to connect your individual login with your profile only and redirect to your individual home page
+- A "friends" page connected to your profile to add/remove other users and build your dining network
+- The ability to like, comment, and save individual dish reviews to a "Want to Eat" list
+- Integrate compatibility with personal social media pages as well as a functionality to create posts with geo-tagging and images
 
-    And much more!
+And much more!
 
 
 ## Credentials
