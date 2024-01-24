@@ -1,4 +1,4 @@
-# Welcome to Social Diner
+# Social Diner
 
 A social platform for serious foodies. A bridge between commonly known social media platforms of today and food rating applications with a focus on specific dishes and creating your own dining profile!
 
@@ -8,18 +8,26 @@ Upon landing on the application, you will have a navigatable home page with a sm
 
 After you fork and clone this repository to your local directory, you can open your local terminal and run the following (in separate terminal windows):
 
-### `npm run server`
+```javascript 
+npm run server
+```
 
-This will host the local JSON server with our local database of information.
+_This will host the local JSON server with our local database of information._
 
-### `node app.js`
+```javascript
+node app.js
+```
 
-This will host the authentication server for your login credentials. Your login must be an email address and a 9-character password. 
-If an account associated with your email does not exist, you will be prompted to create a new account for your email.
+_This will host the authentication server for your login credentials. Your login must be an email address and a 9-character password. 
+If an account associated with your email does not exist, you will be prompted to create a new account for your email._
 
-### `npm start`
+```javascript
+npm start
+```
 
-This will start the react app and redirect you to a browser with the running app. Enjoy!
+_This will start the react app and redirect you to a browser with the running app._ 
+
+### Now feel free to enjoy!
 
 ## Future Goals
 
