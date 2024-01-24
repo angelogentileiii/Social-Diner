@@ -1,3 +1,7 @@
+<p align="center" width='100%' >
+    <img src="https://github.com/angelogentileiii/Social-Diner/assets/140743863/63a9de14-2e75-4d9b-9e39-49417227b493" />   
+</p>
+
 # Social Diner
 
 A social platform for serious foodies. A bridge between commonly known social media platforms of today and food rating applications with a focus on specific dishes and creating your own dining profile!
