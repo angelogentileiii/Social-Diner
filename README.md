@@ -1,10 +1,12 @@
-<p align="center" width='100%' >
+# Social Diner
+
+## A social platform for serious foodies!
+
+<p align="center" >
     <img src="https://github.com/angelogentileiii/Social-Diner/assets/140743863/63a9de14-2e75-4d9b-9e39-49417227b493" />   
 </p>
 
-# Social Diner
-
-A social platform for serious foodies. A bridge between commonly known social media platforms of today and food rating applications with a focus on specific dishes and creating your own dining profile!
+A bridge between commonly known social media platforms of today and food rating applications with a focus on specific dishes and creating your own dining profile!
 
 Upon landing on the application, you will have a navigatable home page with a small collection of food-related articles and instagram profiles. In your sidebar navigation, you can choose to login with your email and password in order to have access to creating new reviews, creating new local profiles, and viewing all current profiles and reviews.
 
